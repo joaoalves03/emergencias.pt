@@ -205,7 +205,7 @@ class List extends Component {
 
 
     return (
-        <div className="shadow-lg mx-auto bg-white mt-24 md:mt-16 h-screen">
+        <div className="shadow-lg mx-auto bg-white mt-24 md:mt-16 w-screen overflow-x-hidden">
             <div className="container my-12 mx-auto px-4 md:px-12">
                 <div className="flex flex-wrap -mx-1 lg:-mx-4">
                     <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/5">
@@ -316,7 +316,7 @@ class List extends Component {
                 </div>
             </div>
           <div className="-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 overflow-x-auto">
-				<div className="inline-block min-w-full shadow rounded-lg overflow-hidden">
+				<div className="inline-block min-w-full shadow rounded-lg overflow-x-scroll max-w-full">
 					<table className="min-w-full leading-normal">
 						<thead>
 							<tr>
