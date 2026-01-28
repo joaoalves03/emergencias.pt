@@ -206,85 +206,60 @@ class List extends Component {
 
     return (
         <div className="shadow-lg mx-auto bg-white mt-24 md:mt-16 w-screen overflow-x-hidden">
-            <div className="container my-12 mx-auto px-4 md:px-12">
+            <div className="container md:my-12 mx-auto px-4 md:px-8">
                 <div className="flex flex-wrap -mx-1 lg:-mx-4">
-                    <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/5">
-                        <div class="overflow-hidden rounded-lg shadow-lg">
-                            <header class="flex items-center justify-between leading-tight p-2 md:p-4 place-content-center">
-
-                                <p class="text-grey-darker text-6xl text-center">
-                                    {this.state.totalIncidents} 🚨
-                                </p>
-                            </header>
-
-                            <footer class="flex items-center justify-between leading-none p-2 md:p-4 place-content-center">
-                               <p className="text-center text-sm">Total Ocorrências</p>
-                            </footer>
-
+                    <div className="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/5">
+                        <div
+                            className="overflow-hidden rounded-lg shadow-lg flex md:flex-col items-center md:justify-center p-4 gap-4">
+                            <div className="text-6xl">🚨</div>
+                            <div>
+                                <p className="text-6xl text-grey-darker md:text-center">{this.state.totalIncidents}</p>
+                                <p>Total Ocorrências</p>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/5">
-                        <div class="overflow-hidden rounded-lg shadow-lg">
-                            <header class="flex items-center justify-between leading-tight p-2 md:p-4 place-content-center">
-
-                                <p class="text-grey-darker text-6xl text-center">
-                                    {this.state.totalMan} 👨‍🚒
-                                </p>
-                            </header>
-
-                            <footer class="flex items-center justify-between leading-none p-2 md:p-4 place-content-center">
-                                <p className="text-center text-sm">Total Operacionais</p>
-                            </footer>
-
+                    <div className="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/5">
+                        <div
+                            className="overflow-hidden rounded-lg shadow-lg flex md:flex-col items-center md:justify-center p-4 gap-4">
+                            <div className="text-6xl">👨‍🚒</div>
+                            <div>
+                                <p className="text-6xl text-grey-darker md:text-center">{this.state.totalMan}</p>
+                                <p>Total Operacionais</p>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/5">
-                        <div class="overflow-hidden rounded-lg shadow-lg">
-                            <header class="flex items-center justify-between leading-tight p-2 md:p-4 place-content-center">
-
-                                <p class="text-grey-darker text-6xl text-center">
-                                    {this.state.totalTerrain} 🚒
-                                </p>
-                            </header>
-
-                            <footer class="flex items-center justify-between leading-none p-2 md:p-4 place-content-center">
-                                <p className="text-center text-sm">Total Veículos</p>
-                            </footer>
-
+                    <div className="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/5">
+                        <div
+                            className="overflow-hidden rounded-lg shadow-lg flex md:flex-col items-center md:justify-center p-4 gap-4">
+                            <div className="text-6xl">🚒</div>
+                            <div>
+                                <p className="text-6xl text-grey-darker md:text-center">{this.state.totalTerrain}</p>
+                                <p>Total Veículos</p>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/5">
-                        <div class="overflow-hidden rounded-lg shadow-lg">
-                            <header class="flex items-center justify-between leading-tight p-2 md:p-4 place-content-center">
-
-                                <p class="text-grey-darker text-6xl text-center">
-                                    {this.state.totalAerial} 🚁
-                                </p>
-                            </header>
-
-                            <footer class="flex items-center justify-between leading-none p-2 md:p-4 place-content-center">
-                                <p className="text-center text-sm">Total Aéreos</p>
-                            </footer>
-
+                    <div className="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/5">
+                        <div
+                            className="overflow-hidden rounded-lg shadow-lg flex md:flex-col items-center md:justify-center p-4 gap-4">
+                            <div className="text-6xl">🚁</div>
+                            <div>
+                                <p className="text-6xl text-grey-darker md:text-center">{this.state.totalAerial}</p>
+                                <p>Total Aéreos</p>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/5">
-                        <div class="overflow-hidden rounded-lg shadow-lg">
-                            <header class="flex items-center justify-between leading-tight p-2 md:p-4 place-content-center">
-
-                                <p class="text-grey-darker text-6xl text-center">
-                                    {this.state.totalBoat} 🚣
-                                </p>
-                            </header>
-
-                            <footer class="flex items-center justify-between leading-none p-2 md:p-4 place-content-center">
-                                <p className="text-center text-sm">Total Aquáticos</p>
-                            </footer>
-
+                    <div className="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/5">
+                        <div
+                            className="overflow-hidden rounded-lg shadow-lg flex md:flex-col items-center md:justify-center p-4 gap-4">
+                            <div className="text-6xl">🚣</div>
+                            <div>
+                                <p className="text-6xl text-grey-darker md:text-center">{this.state.totalBoat}</p>
+                                <p>Total Aquáticos</p>
+                            </div>
                         </div>
                     </div>
                 </div>
